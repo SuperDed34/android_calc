@@ -78,7 +78,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button_root:
                 a = Integer.valueOf(String.valueOf(output.getText()));
-                output.setText(a/a);
+                Double d = Math.sqrt(a);
+                output.setText(d.toString().substring(0,4));
                 break;
             case R.id.button_C:
                 output.setText("");
